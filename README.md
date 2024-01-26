@@ -7,12 +7,12 @@ Human-machine teams in industrial settings require efficient Task Scheduling and
 - ./context_bayes_opt/ -- GP based Bayesian optimizer functions
 - ./gen/ -- Generate random problem instances
         mrc.py details how the constraints are sampled
-- ./env/ -- OpenAI based Environment for Single Round and Multi-Round Scheduling
-- ./evolutionary_algorithm.py -- Genetic Algorithm functions for generating schedules using multi-generational optimization           
+- ./env/ -- OpenAI based Environment for Single Round and Multi-Round Scheduling         
 - ./graph/hetgat.py -- HGA layer implementation
-- generate_problems.py -- Generate random problem instances with different problem size
-- gp_scheduler.py -- some basic functions for GP based scheduler
-- gaussian_process_scheuler.py -- main function for running BOTH
+- ./evolutionary_algorithm.py -- Genetic Algorithm functions for generating schedules using multi-generational optimization  
+- ./generate_problems.py -- Generate random problem instances with different problem size
+- ./gp_scheduler.py -- some basic functions for GP based scheduler
+- ./gaussian_process_scheuler.py -- main function for running BOTH
 
 ## Environment Setup
 Create the environment using the `./benchmark/hybridnet/requirements.yaml` file using:
