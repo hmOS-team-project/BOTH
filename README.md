@@ -31,8 +31,7 @@ python generate_problems.py --folder=data/medium_problem_set/problems --human=2 
 python generate_problems.py --folder=data/large_problem_set/problems --human=2 --robot=2 --task-min=38 --task-max=42 --start-problem=1 --end-problem=200
 ```
 
-## usage
-### Run BOTH
+## Run BOTH
 ```
 python gaussian_process_scheuler.py
 ```
