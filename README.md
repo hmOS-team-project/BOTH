@@ -10,4 +10,30 @@ Human-machine teams in industrial settings require efficient Task Scheduling and
 - ./env/ -- OpenAI based Environment for Single Round and Multi-Round Scheduling
 - ./evolutionary_algorithm.py -- Genetic Algorithm functions for generating schedules using multi-generational optimization           
 - ./graph/hetgat.py -- HGA layer implementation
-- edfutils.py has some simple class for robot teams
+- generate_problems.py -- Generate random problem instances with different problem size
+- gp_scheduler.py -- some basic functions for GP based scheduler
+- gaussian_process_scheuler.py -- main function for running BOTH
+
+## Environment Setup
+Create the environment using the `./benchmark/hybridnet/requirements.yaml` file using:
+
+```bash
+conda env create -f requirements.yaml
+```
+
+## Generate Task Scheduling and Allocation Problems:
+```bash
+# Small Problem Size
+python generate_problems.py --folder=data/small_problem_set/problems --human=2 --robot=2 --task-min=9 --task-max=11 --start-problem=1 --end-problem=200
+# Medium Problem Size
+python generate_problems.py --folder=data/medium_problem_set/problems --human=2 --robot=2 --task-min=18 --task-max=22 --start-problem=1 --end-problem=200
+# Large Problem Size
+python generate_problems.py --folder=data/large_problem_set/problems --human=2 --robot=2 --task-min=38 --task-max=42 --start-problem=1 --end-problem=200
+```
+
+## usage
+### Run BOTH
+```
+python gaussian_process_scheuler.py
+```
+
